@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/puro-onto-test/static/css/main.2dbb22eb.chunk.css",
-    "main.js": "/puro-onto-test/static/js/main.de6674f9.chunk.js",
-    "main.js.map": "/puro-onto-test/static/js/main.de6674f9.chunk.js.map",
+    "main.js": "/puro-onto-test/static/js/main.3613ca43.chunk.js",
+    "main.js.map": "/puro-onto-test/static/js/main.3613ca43.chunk.js.map",
     "runtime-main.js": "/puro-onto-test/static/js/runtime-main.c4df2994.js",
     "runtime-main.js.map": "/puro-onto-test/static/js/runtime-main.c4df2994.js.map",
     "static/css/2.0624914a.chunk.css": "/puro-onto-test/static/css/2.0624914a.chunk.css",
     "static/js/2.5138450e.chunk.js": "/puro-onto-test/static/js/2.5138450e.chunk.js",
     "static/js/2.5138450e.chunk.js.map": "/puro-onto-test/static/js/2.5138450e.chunk.js.map",
     "index.html": "/puro-onto-test/index.html",
-    "precache-manifest.54ff1b6794b3ea4dfe37f067d6cf9c27.js": "/puro-onto-test/precache-manifest.54ff1b6794b3ea4dfe37f067d6cf9c27.js",
+    "precache-manifest.a22dc689504348d41ed81777dd06af62.js": "/puro-onto-test/precache-manifest.a22dc689504348d41ed81777dd06af62.js",
     "service-worker.js": "/puro-onto-test/service-worker.js",
     "static/css/2.0624914a.chunk.css.map": "/puro-onto-test/static/css/2.0624914a.chunk.css.map",
     "static/css/main.2dbb22eb.chunk.css.map": "/puro-onto-test/static/css/main.2dbb22eb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.0624914a.chunk.css",
     "static/js/2.5138450e.chunk.js",
     "static/css/main.2dbb22eb.chunk.css",
-    "static/js/main.de6674f9.chunk.js"
+    "static/js/main.3613ca43.chunk.js"
   ]
 }

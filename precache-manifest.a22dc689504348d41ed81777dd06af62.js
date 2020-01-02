@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbdefb464ea33d79ac69e262375b2891",
+    "revision": "d943cb98944a0a8e660049c65f678b81",
     "url": "/puro-onto-test/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/puro-onto-test/static/css/2.0624914a.chunk.css"
   },
   {
-    "revision": "bb1200b21b9dc2de8cb1",
+    "revision": "bf8c95880f0af5036e33",
     "url": "/puro-onto-test/static/css/main.2dbb22eb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/puro-onto-test/static/js/2.5138450e.chunk.js"
   },
   {
-    "revision": "bb1200b21b9dc2de8cb1",
-    "url": "/puro-onto-test/static/js/main.de6674f9.chunk.js"
+    "revision": "bf8c95880f0af5036e33",
+    "url": "/puro-onto-test/static/js/main.3613ca43.chunk.js"
   },
   {
     "revision": "14a68028665ef0745172",
