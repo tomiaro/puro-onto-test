@@ -8,7 +8,7 @@
   "relations":[
      {"formal":"simleLine"}, {"material":"simleLine"},{"Generalization":"arrowLine"},{"mediation": "simpleLine", "showType": true}, {"Characterization": "simpleLine", "showType": true}, 
      {"derivation": "dashedLine"}, {"Structuration": "simpleLine", "showType": true}, {"part-whole-shared": "aggregation"}, {"part-whole-exclusive": "composition"},
-     {"componentOf": "composition"},{"containment": "simpleLine"}, {"memberOf-F": "composition"},{"memberOf-B": "aggregation"},
+     {"componentOf": "composition"},{"containment": "simpleLine"}, {"memberOf-F": "composition", "showType":true},{"memberOf-B": "aggregation"},
      {"subCollectionOf": "composition"}, {"subQuantityOf": "composition"}, {"connect": "simpleLine"}
   ],
 
@@ -52,7 +52,7 @@
   
   "Relator":[
     {"key": "from", "bTypeNumber": ["1","2"], "offer": ["Kind", "Subkind", "Role", "Category","Collective"],
-      "1": {"Kind": ["Subkind","Role"], "Collective": ["Kind", "Subkind", "Role"], "Category":["Kind"], "Subkind":["Subkind","Role","None"]},
+      "1": {"Kind": ["Subkind","Role"], "Collective": ["Kind", "Subkind","Role"], "Category":["Kind"], "Subkind":["Subkind","Role","None"]},
       "2": {"Kind": ["Subkind", "Role"], "Subkind": ["Subkind","Role"]},
       "3": {"Subkind": ["Role"]}
     },
@@ -79,16 +79,16 @@
 
 
   "Role":[
-    {"key": "superType", "type": ["Kind", "Subkind", "Mode", "None"]},
+    {"key": "superType", "type": ["Kind", "Subkind", "Mode","Collective", "None"]},
     {"key": "subType", "type": []},
     {"key": "connect", "type": ["Relator", "None"]},
-    {"key": "connected", "type": ["Relator"], "superType":["Kind", "Subkind"]}
+    {"key": "connected", "type": ["Relator"], "superType":["Kind", "Subkind", "Collective"]}
     ],
 
   "Collective":[
     {"key": "superType", "type": []},
     {"key": "subType", "type": []},
-    {"key": "connect", "type": ["Kind", "Subkind"]}
+    {"key": "connect", "type": ["Kind", "Subkind", "Role"]}
   ]
   , 
   "Kind":[
@@ -104,7 +104,7 @@
     {"key": "subType", "type": []}
   ],
   "Subkind":[
-    {"key": "superType", "type": ["Kind", "Mode", "Subkind", "Collective"]},
+    {"key": "superType", "type": ["Kind", "Mode", "Subkind", "Collective", "Category"]},
     {"key": "subType", "type": []},
     {"key": "connect", "type":[]},
     {"key": "subTyped", "type": ["Role"], "superType":["Kind"], "question": "singleUniv"},
