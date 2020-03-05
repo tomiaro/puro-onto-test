@@ -68,7 +68,7 @@
     {"key": "from", "bTypeNumber": ["1","2"], "offer": ["Kind", "Collective", "Category"],
     "1": {"Collective": ["Kind", "Subkind"], "Category": ["Kind","Subkind"], "Kind":["Subkind", "None"]}},
     {"key" : "to","offer": ["Mode", "Datatype"]},
-    {"key": "cardinality", "fromT": [1], "toT": [1,"*"]}
+    {"key": "cardinality", "fromT": [1,"*"], "toT": [1,"*"]}
   ],
 
 
