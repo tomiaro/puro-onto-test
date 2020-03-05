@@ -1,5 +1,5 @@
 {  
-  "lastTypes":["Kind", "Collective"], 
+  "lastTypes":["Kind", "Collective", "Category"], 
   
   "classes":[
     "Kind", "Subkind","Phase","Role", "Collective", "Quantity", "Relator","Category","RoleMixin","Mixin","Mode","Quality", "None"
