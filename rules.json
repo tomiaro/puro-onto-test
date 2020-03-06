@@ -107,7 +107,7 @@
     {"key": "superType", "type": ["Kind", "Mode", "Subkind", "Collective", "Category"]},
     {"key": "subType", "type": []},
     {"key": "connect", "type":[]},
-    {"key": "subTyped", "type": ["Role"], "superType":["Kind"], "question": "singleUniv"},
+    {"key": "subTyped", "type": ["Role"], "superType":["Kind", "Subkind"]},
     {"key": "connected", "type": ["Relator"], "superType": ["Kind","Subkind","Collective"]}
   ]
   }
