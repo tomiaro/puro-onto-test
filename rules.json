@@ -1,7 +1,7 @@
 {  
   "lastTypes":["Kind", "Collective", "Category"], 
   "iframeURL": "http://protegeserver.cz/purom5/?model=MODELID&readOnly=1", 
-  "modelURL": " http://protegeserver.cz/purom5/server/rdf-export/MODELID.rdf",
+  "modelURL": "http://protegeserver.cz/purom5/server/rdf-export/MODELID.rdf",
 
   "classes":[
     "Kind", "Subkind","Phase","Role", "Collective", "Quantity", "Relator","Category","RoleMixin","Mixin","Mode","Quality", "None"
