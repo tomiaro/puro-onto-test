@@ -9,7 +9,7 @@
 
   "relations":[
      {"formal":"simleLine"}, {"material":"simleLine"},{"Generalization":"arrowLine"},{"mediation": "simpleLine", "showType": true}, {"Characterization": "simpleLine", "showType": true}, 
-     {"derivation": "dashedLine"}, {"Structuration": "simpleLine", "showType": true}, {"part-whole-shared": "aggregation"}, {"part-whole-exclusive": "composition"},
+     {"derivation": "dashedLine"}, {"structuration": "simpleLine", "showType": true}, {"part-whole-shared": "aggregation"}, {"part-whole-exclusive": "composition"},
      {"componentOf": "composition"},{"containment": "simpleLine"}, {"memberOf-F": "composition", "showType":true},{"memberOf-B": "aggregation"},
      {"subCollectionOf": "composition"}, {"subQuantityOf": "composition"}, {"connect": "simpleLine"}
   ],
@@ -30,7 +30,8 @@
     {"from": ["Collective"], "to": ["Subkind","Kind", "Role"], "offer": ["memberOf-F"], "fromT": ["*","1","0"], "toT": ["*","1","0"]},
     {"from": ["Datatype"], "to":["Datatype"], "offer":["Characterization","Structuration"], "fromT": ["*","1","0"], "toT": ["*","1","0"] },
     {"from": ["*"], "to":["Datatype"], "offer":["connect"], "fromT": ["*","1","0"], "toT": ["*","1","0"] },
-    {"from": ["Category"], "to":["*"], "offer":["Generalization"]}
+    {"from": ["Category"], "to":["*"], "offer":["Generalization"]},
+    {"from": ["Quality"], "to":["Quality"], "offer":["structuration"]}
   ],
 
   "commonRules":[
@@ -72,7 +73,7 @@
   "Characterization":[
     {"key": "from", "bTypeNumber": ["1","2"], "offer": ["Kind", "Collective", "Category"],
     "1": {"Collective": ["Kind", "Subkind"], "Category": ["Kind","Subkind"], "Kind":["Subkind", "None"]}},
-    {"key" : "to","offer": ["Mode", "Datatype"]},
+    {"key" : "to","offer": ["Mode", "Quality"]},
     {"key": "cardinality", "fromT": [1], "toT": [1,"*"]}
   ],
 
@@ -84,7 +85,12 @@
     {"key": "subType", "type": ["Kind","Subkind","Mode","Role", "None"]}
     ],
 
-
+    "Quality":[
+      {"key": "superType", "type": []},
+      {"key": "subType", "type": []},
+      {"key": "connect", "type": ["Quality", "None"]},
+      {"key": "connected", "type": ["Quality"], "connect":["Quality"], "moreThanOne": true, "count":2}
+      ],
   "Role":[
     {"key": "superType", "type": ["Kind", "Subkind", "Mode","Collective", "None"]},
     {"key": "subType", "type": []},
