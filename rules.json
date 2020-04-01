@@ -89,7 +89,7 @@
       {"key": "superType", "type": []},
       {"key": "subType", "type": []},
       {"key": "connect", "type": ["Quality", "None"]},
-      {"key": "connected", "type": ["Quality"], "connect":["Quality"], "moreThanOne": true, "count":2}
+      {"key": "connected", "type": ["Quality"], "connect":["Quality"], "moreThanOne": true, "mincCountount":2 , "maxCount": 5}
       ],
   "Role":[
     {"key": "superType", "type": ["Kind", "Subkind", "Mode","Collective", "None"]},
@@ -107,7 +107,7 @@
   "Kind":[
     {"key": "superType", "type": []},
     {"key": "subType", "type": []},
-    {"key": "superTyped", "type": ["Collective"], "moreThanOne": true, "count":2}
+    {"key": "superTyped", "type": ["Collective"], "moreThanOne": true, "mincCountount":2 , "maxCount": 5}
   ],
   "Category":[
     {"key": "superType", "type": []},
@@ -128,7 +128,7 @@
     {"key": "superType", "type": ["Kind", "Subkind"]},
     {"key": "subType", "type": []},
     {"key": "connect", "type": []},
-    {"key": "moreThanOne", "count": 2} 
+    {"key": "moreThanOne", "mincCountount":2 , "maxCount": 5} 
    ]
   }
 

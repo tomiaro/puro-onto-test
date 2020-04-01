@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/puro-onto-test/precache-manifest.6656feb747d37e4ee5042a1a75c7362f.js"
+  "/puro-onto-test/precache-manifest.70e52bdb5726361d905df98c5d8b640c.js"
 );
 
 self.addEventListener('message', (event) => {
