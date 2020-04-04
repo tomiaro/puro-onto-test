@@ -29,7 +29,7 @@
     {"from": ["Kind","Subkind"], "to": ["Subkind"], "offer":["Generalization"]},
     {"from": ["Collective"], "to": ["Subkind","Kind", "Role"], "offer": ["memberOf-F"], "fromT": ["*","1","0"], "toT": ["*","1","0"]},
     {"from": ["Datatype"], "to":["Datatype"], "offer":["Characterization","Structuration"], "fromT": ["*","1","0"], "toT": ["*","1","0"] },
-    {"from": ["*"], "to":["Datatype"], "offer":["connect"], "fromT": ["*","1","0"], "toT": ["*","1","0"] },
+    {"from": ["*"], "to":["Datatype"], "offer":["connect"], "fromT": ["*","1","0..*", "1..*"], "toT": ["*","1","0..*","1..*"] },
     {"from": ["Category"], "to":["*"], "offer":["Generalization"]},
     {"from": ["Quality"], "to":["Quality"], "offer":["structuration"]}
   ],
