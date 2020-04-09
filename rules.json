@@ -4,7 +4,8 @@
   "modelURL": "http://protegeserver.cz/purom5/server/rdf-export/MODELID.rdf",
 
   "classes":[
-    "Kind", "Subkind","Phase","Role", "Collective", "Quantity", "Relator","Category","RoleMixin","Mixin","Mode","Quality", "None"
+    "Kind", "Subkind","Phase","Role", "Collective", "Quantity", "Relator",
+    "Category", "RoleMixin","Mixin","Mode","Quality", "None"
   ],
 
   "relations":[
@@ -15,21 +16,20 @@
   ],
 
 
-  "bRelationRules": [
-    {"offer": ["Characterization","Relator"], "question":"Which type is relation VAL?"}
-  ],
+  "bRelationRules": ["Characterization","Relator"]
+  ,
 
  
   
   
   "relationRules":[
     {"from": ["Kind", "Subkind"], "to": ["Role"], "offer":["Generalization"]},
-    {"from": ["Kind"], "to": ["Role"], "offer":["Generalization"]},
     {"from": ["Mode"], "to":["Subkind","Kind","Mode", "Role"], "offer":["Generalization"]},
     {"from": ["Kind","Subkind"], "to": ["Subkind"], "offer":["Generalization"]},
-    {"from": ["Collective"], "to": ["Subkind","Kind", "Role"], "offer": ["memberOf-F"], "fromT": ["*","1","0"], "toT": ["*","1","0"]},
-    {"from": ["Datatype"], "to":["Datatype"], "offer":["Characterization","Structuration"], "fromT": ["*","1","0"], "toT": ["*","1","0"] },
-    {"from": ["*"], "to":["Datatype"], "offer":["connect"], "fromT": ["*","1","0..*", "1..*"], "toT": ["*","1","0..*","1..*"] },
+    {"from": ["Collective"], "to": ["Subkind","Kind", "Role"], 
+      "offer": ["memberOf-F"], "fromT": ["*","1","0"], "toT": ["*","1","0"]},
+    {"from": ["*"], "to":["Datatype"], "offer":["connect"], 
+      "fromT": ["*","1","0..*", "1..*"], "toT": ["*","1","0..*","1..*"] },
     {"from": ["Category"], "to":["*"], "offer":["Generalization"]},
     {"from": ["Quality"], "to":["Quality"], "offer":["structuration"]}
   ],
@@ -38,7 +38,7 @@
       {"childPuro": ["none"], "fatherOnto": ["Mode"], "connection": 0, "offer": ["Kind","Subkind","Role","Mode","None"]},
       {"childPuro": ["none"], "fatherOnto": ["Role"], "connection": 0, "offer": ["Kind", "Subkind", "Role", "Collective", "None"] },
       {"childPuro": ["none"], "fatherOnto": ["Subkind"], "connection": 0, "offer": ["Kind", "Subkind", "Collective", "None"] },
-      {"childPuro": ["none"], "fatherOnto": ["Kind"], "connection": 0, "offer": ["Subkind"]},
+      {"childPuro": ["none"], "fatherOnto": ["Kind"], "connection": 0, "offer": ["Subkind", "Mode"]},
       {"childPuro": ["none"], "fatherOnto": ["Datatype"], "connection": 0, "offer": ["Datatype", "None"] },
       {"childPuro": ["none"], "fatherOnto": ["NoRelation"], "connection": 0, "offer": ["Kind", "Role"] }
         
@@ -49,10 +49,10 @@
     {"type": "BType", "question": "Which type is a VAL?"},
     {"type": "instance", "question": "Which ontoUML element represents instance VAL?"},
     {"type": "bTypeChild", "question": "Which element represents child of the VAL?"},
-    {"type": "none", "question": "Which element plays TYPE to REL?"},
-    {"type": "singleUniv", "question": "What is the TYPE of VAL?"},
     {"type": "moreThanOne", "question": "What is another TYPE of VAL?"},
-    {"type": "relSpecific", "question": "In term of VAL relationship."}
+    {"type": "relSpecific", "question": "In term of VAL relationship."},
+    {"type": "bRelation", "question":"Which type is relation VAL?"},
+    {"type": "singleUniv", "question": "What is the TYPE of VAL?"}
   ],
   
   
@@ -76,7 +76,6 @@
     {"key" : "to","offer": ["Mode", "Quality"]},
     {"key": "cardinality", "fromT": [1], "toT": [1,"*"]}
   ],
-
 
 
 
