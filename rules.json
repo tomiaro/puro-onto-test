@@ -1,7 +1,7 @@
 {  
   "lastTypes":["Kind", "Collective", "Category"], 
   "iframeURL": "http://protegeserver.cz/purom5/?model=MODELID&readOnly=1", 
-  "modelURL": "http://protegeserver.cz/purom5/server/rdf-export/MODELID.rdf",
+  "modelURL": "http://protegeserver.cz/purom5/server/rdf-export/MODELID.rdf"
 
   "classes":[
     "Kind", "Subkind","Phase","Role", "Collective", "Quantity", "Relator",
@@ -52,6 +52,7 @@
     {"type": "moreThanOne", "question": "What is another TYPE of VAL?"},
     {"type": "relSpecific", "question": "In term of VAL relationship."},
     {"type": "bRelation", "question":"Which type is relation VAL?"},
+    {"type": "valuations", "question": "Which Datatype represents VAL?"},
     {"type": "singleUniv", "question": "What is the TYPE of VAL?"}
   ],
   
