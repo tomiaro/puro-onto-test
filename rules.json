@@ -39,9 +39,9 @@
 
   "commonRules":[
       {"childPuro": ["none"], "fatherOnto": ["Mode"], "connection": 0, "offer": ["Subkind","Role","Mode","None"]},
-      {"childPuro": ["none"], "fatherOnto": ["Role"], "connection": 0, "offer": ["Kind", "Subkind", "Role", "Collective", "None"] },
-      {"childPuro": ["none"], "fatherOnto": ["Subkind"], "connection": 0, "offer": ["Kind", "Subkind", "Collective", "None"] },
-      {"childPuro": ["none"], "fatherOnto": ["Kind"], "connection": 0, "offer": ["Subkind", "Mode", "None"]},
+      {"childPuro": ["none"], "fatherOnto": ["Role"], "connection": 0, "offer": ["Role"] },
+      {"childPuro": ["none"], "fatherOnto": ["Subkind"], "connection": 0, "offer": ["Subkind","Phase","Role", "None"] },
+      {"childPuro": ["none"], "fatherOnto": ["Kind"], "connection": 0, "offer": ["Subkind", "Mode","Role", "None"]},
       {"childPuro": ["none"], "fatherOnto": ["NoRelation"], "connection": 0, "offer": ["Kind", "Role"] }
         
     ],
